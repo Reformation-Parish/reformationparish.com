@@ -1,0 +1,67 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        {{ $logo := resources.Get "rp-logo.svg" }}
+        {{ with $logo }}
+          <img
+            src="{{ .RelPermalink }}"
+            alt="{{ $.Site.Title }}"
+            class="footer-brand__logo"
+            width="128"
+            height="128"
+          >
+        {{ end }}
+        <p class="footer-brand__name">Reformation Parish</p>
+        <p class="footer-brand__desc">
+          A confessional, liturgical congregation<br>in the Communion of Reformed Evangelical Churches.
+        </p>
+        <address class="footer-address">
+          {{ with .Site.Params.address }}{{ . | markdownify }}{{ end }}
+          {{ with .Site.Params.phone }}<br>{{ . }}{{ end }}
+          {{ with .Site.Params.email }}<br><a href="mailto:{{ . }}" style="color:inherit;">{{ . }}</a>{{ end }}
+        </address>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <span class="footer-col__heading">Navigate</span>
+        <ul class="footer-links">
+          {{ range .Site.Menus.footer }}
+            <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- Worship info -->
+      <div class="footer-col">
+        <span class="footer-col__heading">Lord's Day Worship</span>
+        <ul class="footer-links">
+          <li>
+            <span style="color: rgba(250,248,243,0.6)">
+              {{ with .Site.Params.serviceDay }}{{ . }}{{ end }}
+              {{ with .Site.Params.serviceTime }}at {{ . }}{{ end }}
+            </span>
+          </li>
+          {{ with .Site.Params.location }}
+            <li><span style="color: rgba(250,248,243,0.6)">{{ . }}</span></li>
+          {{ end }}
+          {{ with .Site.Params.denomination }}
+            <li style="margin-top: 1rem;">
+              <span style="font-size:0.72rem; letter-spacing:0.05em; color: rgba(250,248,243,0.35)">{{ . }}</span>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+
+    </div><!-- /.footer-inner -->
+  </div>
+
+  <div class="container">
+    <div class="footer-bottom">
+      <span>&copy; {{ now.Year }} Reformation Parish. All rights reserved.</span>
+    </div>
+  </div>
+</footer>

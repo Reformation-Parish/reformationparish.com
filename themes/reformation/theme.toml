@@ -1,0 +1,5 @@
+name = 'Reformation'
+license = 'MIT'
+licenselink = ''
+description = 'A theme for churches with a high regard of the sacraments'
+min_version = '0.120.0'

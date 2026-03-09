@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<!-- Page hero -->
+<div class="page-hero">
+  <div class="container">
+    {{ with .CurrentSection }}
+      <span class="page-hero__label">{{ .Title }}</span>
+    {{ end }}
+    <h1 class="page-hero__title">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}
+      <p class="page-hero__subtitle">{{ . }}</p>
+    {{ end }}
+    {{ if and .Date (ne .Section "") (ne .Section "pages") }}
+      <p class="page-hero__subtitle" style="margin-top: var(--sp-3);">
+        {{ .Date.Format "January 2, 2006" }}
+        {{ with .Params.passage }} &ensp;·&ensp; {{ . }}{{ end }}
+      </p>
+    {{ end }}
+  </div>
+</div>
+
+<!-- Content -->
+<article class="section section--cream">
+  <div class="container">
+    <div class="prose" data-animate>
+      {{ .Content }}
+    </div>
+
+    <!-- Sermon extras -->
+    {{ if eq .Section "sermons" }}
+      <div class="prose" style="margin-top: var(--sp-12);">
+        {{ with .Params.audio }}
+          <div style="margin: var(--sp-8) 0;">
+            <audio controls style="width: 100%;">
+              <source src="{{ . }}" type="audio/mpeg">
+            </audio>
+          </div>
+        {{ end }}
+        <div style="margin-top: var(--sp-8);">
+          <a href="{{ "/sermons/" | relURL }}" class="btn btn--outline">← All Sermons</a>
+        </div>
+      </div>
+    {{ end }}
+
+  </div>
+</article>
+
+{{ end }}

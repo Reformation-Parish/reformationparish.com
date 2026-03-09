@@ -1,3 +1,55 @@
 baseURL = 'https://reformationparish.com/'
 languageCode = 'en-us'
 title = 'Reformation Parish'
+theme = 'reformation'
+
+[params]
+  description = 'A confessional, liturgical church in the Communion of Reformed Evangelical Churches'
+  tagline = 'In Senoia as it is in Heaven'
+  location = 'Senoia, GA'
+  address = '?? Senoia, GA'
+  phone = '(555) 000-0000'
+  email = 'info@reformationparish.com'
+  serviceDay = 'Sunday'
+  serviceTime = '4:00 PM'
+  denomination = 'Communion of Reformed Evangelical Churches'
+
+[[menus.main]]
+  name = 'About'
+  url = '/about/'
+  weight = 10
+
+[[menus.main]]
+  name = 'Worship'
+  url = '/worship/'
+  weight = 20
+
+[[menus.main]]
+  name = 'Sermons'
+  url = '/sermons/'
+  weight = 30
+
+[[menus.main]]
+  name = 'Contact'
+  url = '/contact/'
+  weight = 40
+
+[[menus.footer]]
+  name = 'About'
+  url = '/about/'
+  weight = 10
+
+[[menus.footer]]
+  name = 'Worship'
+  url = '/worship/'
+  weight = 20
+
+[[menus.footer]]
+  name = 'Sermons'
+  url = '/sermons/'
+  weight = 30
+
+[[menus.footer]]
+  name = 'Contact'
+  url = '/contact/'
+  weight = 40

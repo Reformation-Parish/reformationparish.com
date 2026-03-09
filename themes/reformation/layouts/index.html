@@ -1,0 +1,179 @@
+{{ define "main" }}
+
+
+<section class="hero" aria-label="Welcome">
+  <div class="hero__bg" aria-hidden="true"></div>
+
+  <div class="hero__content">
+
+    {{ $logo := resources.Get "rp-logo-no-wordmark.svg" }}
+    {{ with $logo }}
+      <img
+        src="{{ .RelPermalink }}"
+        alt=""
+        class="hero__logo"
+        aria-hidden="true"
+        width="512"
+        height="512"
+      >
+    {{ end }}
+
+    <span class="hero__eyebrow">
+      {{- with .Site.Params.location }}{{ . }} &ensp;·&ensp;{{ end -}}
+      {{- with .Site.Params.denomination }}{{ . }}{{ end -}}
+    </span>
+
+    <h1 class="hero__title">
+      Reformation<br>Parish
+    </h1>
+
+    <div class="hero__rule" aria-hidden="true">
+      <span class="hero__rule-line"></span>
+      <span class="hero__rule-diamond"></span>
+      <span class="hero__rule-line"></span>
+    </div>
+
+    <p class="hero__tagline">
+      {{ with .Site.Params.tagline }}{{ . }}{{ else }}Gathered by grace. Formed by liturgy. Sent in love.{{ end }}
+    </p>
+
+    <div class="hero__cta">
+      <a href="{{ "/worship/" | relURL }}" class="btn btn--gold">Plan Your Visit</a>
+      <a href="{{ "/about/" | relURL }}"   class="btn btn--ghost">Who We Are</a>
+    </div>
+
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span class="hero__scroll-line"></span>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<section class="section section--cream">
+  <div class="container">
+    <div class="welcome">
+
+      <div class="welcome__text" data-animate>
+        <span class="section-label">Welcome</span>
+        <h2 class="section-title">An oupost<br/>of the heavenly city.</h2>
+
+        <div class="ornament">
+          <span class="ornament__line"></span>
+          <span class="ornament__icon">✦</span>
+          <span class="ornament__line"></span>
+        </div>
+
+        <p class="section-lead">
+          Reformation Parish is a Mission church of the Communion of Reformed Evangelical Churches — ????
+        </p>
+
+        <blockquote class="welcome__pull">
+          "Our mission is to proclaim the authority of Jesus over all things by living faithfully as prophets, priests, and kings in our homes and communities."
+        </blockquote>
+
+        <p style="color: var(--text-muted); font-size: var(--text-base); line-height: 1.75;">
+          We are a congregation in Senoia, GA, committed to calling the nations to faith in the resurrected Christ and feasting in gathered assembly each Lord's Day through Word and Sacrament.
+        </p>
+
+        <div class="welcome__cta">
+          <a href="{{ "/about/" | relURL }}" class="btn btn--outline">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Decorative medallion (hidden on mobile) -->
+      <div class="welcome__medallion" aria-hidden="true">
+        <div class="welcome__medallion-inner">
+          <div class="welcome__ring"></div>
+          <div class="welcome__ring"></div>
+          <div class="welcome__ring"></div>
+          {{ $logo := resources.Get "rp-logo.svg" }}
+          {{ with $logo }}
+            <img
+              src="{{ .RelPermalink }}"
+              alt=""
+              class="welcome__medallion-logo"
+            >
+          {{ end }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--parchment">
+  <div class="container">
+
+    <div class="pillars-header text-center" data-animate>
+      <span class="section-label">Our Worship</span>
+      <h2 class="section-title">The Marks of a<br>Faithful Parish</h2>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar" data-animate>
+        <span class="pillar__numeral">I</span>
+        <h3 class="pillar__title">The Word</h3>
+        <p class="pillar__body">
+          The Holy Bible is God's inspired, inerrant revelation to man — the only certain, sufficient, and infallible rule for faith and life. Every Lord's Day we sit under the expository preaching of God's Word.
+        </p>
+      </div>
+
+      <div class="pillar" data-animate>
+        <span class="pillar__numeral">II</span>
+        <h3 class="pillar__title">The Sacraments</h3>
+        <p class="pillar__body">
+          The Lord's Supper is a memorial of Christ and his death through sacred use of bread and wine, observed each Lord's Day. All baptized covenant members — including baptized children who are able to eat and drink — are welcome at the Table.
+        </p>
+      </div>
+
+      <div class="pillar" data-animate>
+        <span class="pillar__numeral">III</span>
+        <h3 class="pillar__title">Prayer</h3>
+        <p class="pillar__body">
+          Our liturgy is an ordered ascent in prayer — confession, absolution, intercession, and thanksgiving — the covenant people coming before their God with one voice.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section section--dark" style="padding: var(--sp-20) 0;">
+  <div class="container">
+
+    <div class="text-center" data-animate>
+      <span class="section-label">Join Us</span>
+      <h2 class="section-title">Lord's Day Worship</h2>
+      <p class="section-lead" style="margin-inline: auto; text-align: center;">
+        We welcome all who seek to worship the Triune God. Come as you are — the Table is set and the feast awaits.
+      </p>
+    </div>
+
+    <div class="service-band" data-animate>
+      <div class="service-band__item">
+        <span class="service-band__label">Day</span>
+        <span class="service-band__value">{{ with .Site.Params.serviceDay }}{{ . }}{{ else }}Sunday{{ end }}</span>
+        <span class="service-band__sub">Every week of the year</span>
+      </div>
+      <div class="service-band__item">
+        <span class="service-band__label">Time</span>
+        <span class="service-band__value">{{ with .Site.Params.serviceTime }}{{ . }}{{ else }}10:00 AM{{ end }}</span>
+        <span class="service-band__sub">Morning worship service</span>
+      </div>
+      <div class="service-band__item">
+        <span class="service-band__label">Location</span>
+        <span class="service-band__value">{{ with .Site.Params.location }}{{ . }}{{ else }}Your City, ST{{ end }}</span>
+        <span class="service-band__sub">
+          {{ with .Site.Params.address }}{{ . | plainify | truncate 40 }}{{ end }}
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{{ end }}
