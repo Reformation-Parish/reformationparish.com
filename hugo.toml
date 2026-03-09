@@ -1,4 +1,4 @@
-baseURL = 'https://reformation-parish.github.io/reformationparish.com/'
+baseURL = 'https://reformationparish.com/'
 languageCode = 'en-us'
 title = 'Reformation Parish'
 theme = 'reformation'
