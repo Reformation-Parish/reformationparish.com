@@ -35,6 +35,8 @@ Reformation Parish strives to believe, preach, and teach doctrine that accords w
 
 **Last Things.** We believe that it is appointed for men once to die and after that the judgment. On the last day Christ will return and will raise the dead bodily, both the unrighteous and the righteous. All will be judged by Christ and shall receive according to their deeds: those who die in their sin will go into everlasting punishment and those united to Christ will enter everlasting life.
 
+Download [our constitution](/docs/rp-constitution.pdf).
+
 ## Our Confession
 
 We hold to the Westminster Confession of Faith (1646) as a specific Reformational document, subordinate to Scripture. Those who take exception to our Confession are asked to state their exceptions prior to joining as members. All members are expected to affirm the Apostles' Creed and the Nicene Creed.
