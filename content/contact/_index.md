@@ -11,9 +11,14 @@ We meet every Sunday in Senoia, GA. You are welcome to simply show up. If you wo
 
 ## Get in Touch
 
-**Email:** info@reformationparish.com
+<!-- **Email:** info@reformationparish.com
 
-**Phone:** (555) 000-0000
+**Phone:** (555) 000-0000 -->
+
+**Mailing Address:**\
+Reformation Parish\
+1741-2 Newnan Crossing Blvd E\
+Newnan, GA 30265
 
 ## Service Times
 
