@@ -63,20 +63,6 @@
 
   // ── Entrance animations via IntersectionObserver ───
   if ('IntersectionObserver' in window) {
-    const style = document.createElement('style');
-    style.textContent = `
-      [data-animate] {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease, transform 0.6s ease;
-      }
-      [data-animate].is-visible {
-        opacity: 1;
-        transform: none;
-      }
-    `;
-    document.head.appendChild(style);
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
