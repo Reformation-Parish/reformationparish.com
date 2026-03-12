@@ -358,10 +358,10 @@ blockquote {
 }
 
 .hero__logo {
-  width: 384px;
-  height: 384px;
+  width: 256px;
+  height: 256px;
   margin-inline: auto;
-  margin-bottom: var(--sp-8);
+  margin-bottom: var(--sp-4);
   filter: brightness(0) invert(1);
   opacity: 0.88;
 }
@@ -423,10 +423,9 @@ blockquote {
   font-style: italic;
   color: rgba(250, 248, 243, 0.72);
   line-height: 1.65;
-  margin-bottom: var(--sp-12);
+  margin-bottom: var(--sp-8);
   max-width: 500px;
   margin-inline: auto;
-  margin-bottom: var(--sp-12);
 }
 
 .hero__cta {
@@ -1278,8 +1277,8 @@ blockquote {
   }
 
   .hero__logo {
-    width: 256px;
-    height: 256px;
+    width: 192px;
+    height: 192px;
   }
 
   .service-band {
