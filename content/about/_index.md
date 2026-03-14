@@ -1,6 +1,6 @@
 ---
 title: "About Us"
-subtitle: "In Senoia as it is in heaven."
+subtitle: "On Earth as it is in Heaven."
 description: "Learn about Reformation Parish — our mission, confession, and what we believe."
 type: prose
 ---
