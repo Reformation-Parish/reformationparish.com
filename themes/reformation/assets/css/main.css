@@ -1263,6 +1263,10 @@ blockquote {
     display: none;
   }
 
+  .site-header--over-dark .site-nav__link {
+    color: var(--text);
+  }
+
   .nav-toggle {
     display: flex;
   }
