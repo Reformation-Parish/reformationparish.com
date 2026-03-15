@@ -34,6 +34,11 @@ theme = 'reformation'
   url = '/contact/'
   weight = 40
 
+[[menus.main]]
+  name = 'Church Center'
+  url = 'https://reformationparish.churchcenter.com'
+  weight = 50
+
 [[menus.footer]]
   name = 'About'
   url = '/about/'

@@ -30,7 +30,13 @@
         <span class="footer-col__heading">Navigate</span>
         <ul class="footer-links">
           {{ range .Site.Menus.footer }}
-            <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            {{ $external := strings.HasPrefix .URL "http" }}
+            <li>
+              <a href="{{ .URL | relURL }}"
+                {{ if $external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                {{ .Name }}{{ if $external }}<svg class="ext-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><line x1="5" y1="19" x2="19" y2="5"/><polyline points="9 5 19 5 19 15"/></svg>{{ end }}
+              </a>
+            </li>
           {{ end }}
         </ul>
       </div>
