@@ -16,7 +16,8 @@ We meet every Sunday in Senoia, GA. You are welcome to simply show up. If you wo
 **Phone:** (555) 000-0000 -->
 
 **Mailing Address:**\
-Reformation Parish\
+<!-- the inc suffix is required for google non profit status -->
+Reformation Parish, Inc\
 1741-2 Newnan Crossing Blvd E\
 Newnan, GA 30265
 
@@ -31,3 +32,6 @@ Senoia, GA
 ## For Pastoral Matters
 
 If you are in need of pastoral care, counseling, or have questions about membership, baptism, or the Lord's Supper, please email us.
+
+
+Control: 26029897
