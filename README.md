@@ -1,7 +1,7 @@
 # reformationparish.com
 
 Reformation Parish's church website.
-[reformationparish.com](reformationparish.com)
+[reformationparish.com](https://reformationparish.com)
 
 ## License
 
