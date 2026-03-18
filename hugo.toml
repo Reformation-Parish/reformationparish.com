@@ -7,6 +7,7 @@ theme = 'reformation'
   description = 'A confessional, liturgical church in the Communion of Reformed Evangelical Churches'
   tagline = 'On Earth as it is in Heaven'
   location = 'Senoia, GA'
+  mailingAddress = '1741-2 Newnan Crossing Blvd E Newnan, GA 30265'
   # address = '?? Senoia, GA'
   # phone = '(555) 000-0000'
   # email = 'info@reformationparish.com'
@@ -30,14 +31,9 @@ theme = 'reformation'
   weight = 30
 
 [[menus.main]]
-  name = 'Contact'
-  url = '/contact/'
-  weight = 40
-
-[[menus.main]]
   name = 'Church Center'
   url = 'https://reformationparish.churchcenter.com'
-  weight = 50
+  weight = 40
 
 [[menus.footer]]
   name = 'About'
@@ -55,6 +51,6 @@ theme = 'reformation'
   weight = 30
 
 [[menus.footer]]
-  name = 'Contact'
-  url = '/contact/'
+  name = 'Church Center'
+  url = 'https://reformationparish.churchcenter.com'
   weight = 40

@@ -18,11 +18,6 @@
         <p class="footer-brand__desc">
           A confessional, liturgical congregation<br>in the Communion of Reformed Evangelical Churches.
         </p>
-        <address class="footer-address">
-          {{ with .Site.Params.address }}{{ . | markdownify }}{{ end }}
-          {{ with .Site.Params.phone }}<br>{{ . }}{{ end }}
-          {{ with .Site.Params.email }}<br><a href="mailto:{{ . }}" style="color:inherit;">{{ . }}</a>{{ end }}
-        </address>
       </div>
 
       <!-- Quick links -->
@@ -41,24 +36,15 @@
         </ul>
       </div>
 
-      <!-- Worship info -->
+      <!-- Contact info -->
       <div class="footer-col">
-        <span class="footer-col__heading">Lord's Day Worship</span>
-        <ul class="footer-links">
-          <li>
-            <span style="color: rgba(250,248,243,0.6)">
-              {{ with .Site.Params.serviceDay }}{{ . }}{{ end }}
-              {{ with .Site.Params.serviceTime }}at {{ . }}{{ end }}
-            </span>
-          </li>
-          {{ with .Site.Params.location }}
-            <li><span style="color: rgba(250,248,243,0.6)">{{ . }}</span></li>
-          {{ end }}
-          {{ with .Site.Params.denomination }}
-            <li style="margin-top: 1rem;">
-              <span style="font-size:0.72rem; letter-spacing:0.05em; color: rgba(250,248,243,0.35)">{{ . }}</span>
-            </li>
-          {{ end }}
+        <span class="footer-col__heading">Contact</span>
+        <div class="footer-links">
+          <address class="footer-address">
+            {{ with .Site.Params.mailingAddress }}{{ . | markdownify }}{{ end }}
+            {{ with .Site.Params.phone }}<br>{{ . }}{{ end }}
+            {{ with .Site.Params.email }}<br><a href="mailto:{{ . }}" style="color:inherit;">{{ . }}</a>{{ end }}
+          </address>
         </ul>
       </div>
 
