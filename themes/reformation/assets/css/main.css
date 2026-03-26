@@ -1017,13 +1017,20 @@ blockquote {
 }
 
 .footer-social {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 24px;
+  gap: 8px;
+}
+
+.footer-social a {
   display: flex;
   align-items: center;
   color: rgba(250, 248, 243, 0.3);
   transition: color 0.2s;
 }
 
-.footer-social:hover {
+.footer-social a:hover {
   color: rgba(250, 248, 243, 0.7);
 }
 

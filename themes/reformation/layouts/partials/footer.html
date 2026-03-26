@@ -54,9 +54,15 @@
   <div class="container">
     <div class="footer-bottom">
       <span>&copy; {{ now.Year }} Reformation Parish, Inc · 26029897 · All rights reserved.</span>
-      <a href="https://github.com/Reformation-Parish/" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="Reformation Parish on GitHub">
-        {{ (resources.Get "image/github.svg").Content | safeHTML }}
-      </a>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/reformationparish" target="_blank" rel="noopener noreferrer" aria-label="Reformation Parish on Instagram">
+          {{ (resources.Get "image/instagram.svg").Content | safeHTML }}
+        </a>      
+        <a href="https://github.com/Reformation-Parish/" target="_blank" rel="noopener noreferrer" aria-label="Reformation Parish on GitHub">
+          {{ (resources.Get "image/github.svg").Content | safeHTML }}
+        </a>
+      </div>
     </div>
   </div>
 </footer>
