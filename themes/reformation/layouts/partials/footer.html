@@ -38,12 +38,31 @@
 
       <!-- Contact info -->
       <div class="footer-col">
-        <span class="footer-col__heading">Contact</span>
         <div class="footer-links">
           <address class="footer-address">
-            {{ with .Site.Params.mailingAddress }}{{ . | markdownify }}{{ end }}
-            {{ with .Site.Params.phone }}<br>{{ . }}{{ end }}
-            {{ with .Site.Params.email }}<br><a href="mailto:{{ . }}" style="color:inherit;">{{ . }}</a>{{ end }}
+            <dl>
+              {{ with .Site.Params.mailingAddress }}
+              <dt class="footer-col__heading">Mailing Address</dt>
+              <dd>
+                {{ . | markdownify }}
+              </dd>
+              {{ end }}
+
+
+              {{ with .Site.Params.email }}
+              <dt class="footer-col__heading">Email</dt>
+              <dd>
+                <br><a href="mailto:{{ . }}" style="color:inherit;">{{ . }}</a>
+              </dd>
+              {{ end }}
+              
+              {{ with .Site.Params.phone }}
+              <dt class="footer-col__heading">Phone</dt>
+              <dd>
+                <br><a href="tel:{{ . }}" style="color:inherit;">{{ . }}</a>
+              </dd>
+              {{ end }}
+            </dl>
           </address>
         </ul>
       </div>
