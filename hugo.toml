@@ -8,11 +8,11 @@ theme = 'reformation'
   tagline = 'On Earth as it is in Heaven'
   location = 'Senoia, GA'
   mailingAddress = '1741-2 Newnan Crossing Blvd E Newnan, GA 30265'
-  # address = '?? Senoia, GA'
+  meetingAddress = '1225 Eastside School Rd, Senoia, GA 30276'
   # phone = '(555) 000-0000'
   # email = 'info@reformationparish.com'
   serviceDay = 'Sunday'
-  serviceTime = '4:00 PM'
+  serviceTime = '10:00 AM'
   denomination = 'Communion of Reformed Evangelical Churches'
 
 [[menus.main]]
