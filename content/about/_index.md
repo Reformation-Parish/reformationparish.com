@@ -35,7 +35,7 @@ Reformation Parish strives to believe, preach, and teach doctrine that accords w
 
 **Last Things.** We believe that it is appointed for men once to die and after that the judgment. On the last day Christ will return and will raise the dead bodily, both the unrighteous and the righteous. All will be judged by Christ and shall receive according to their deeds: those who die in their sin will go into everlasting punishment and those united to Christ will enter everlasting life.
 
-Download [our constitution](/docs/rp-constitution.pdf).
+Read [our constitution](/constitution).
 
 ## Our Confession
 
