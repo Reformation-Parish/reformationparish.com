@@ -5,6 +5,7 @@
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ with .Site.Params.tagline }} — {{ . }}{{ end }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta name="theme-color" content="#6B1F3A">
 
 <!-- Open Graph -->
 <meta property="og:title" content="{{ .Title }}">
@@ -26,6 +27,15 @@
 
 <!-- Favicon placeholder -->
 <link rel="icon" type="image/svg+xml" href="{{ "rp-logo-no-wordmark.svg" | relURL }}">
+
+<!-- Safari bookmarks / iOS home screen -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+
+<!-- Android home screen -->
+<link rel="manifest" href="/site.webmanifest">
+
+
 
 <!-- Logos Reftagger -->
 <script>
