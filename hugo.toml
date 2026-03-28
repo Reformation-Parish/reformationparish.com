@@ -12,7 +12,7 @@ theme = 'reformation'
   # phone = '(555) 000-0000'
   # email = 'info@reformationparish.com'
   serviceDay = 'Sunday'
-  serviceTime = '10:00 AM'
+  serviceTime = '10:30 AM'
   denomination = 'Communion of Reformed Evangelical Churches'
 
 [[menus.main]]
