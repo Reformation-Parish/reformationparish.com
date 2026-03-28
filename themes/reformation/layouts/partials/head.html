@@ -13,6 +13,7 @@
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:image" content="{{ "rp-logo-no-wordmark.svg" | absURL }}">
 
 <!-- Canonical -->
 <link rel="canonical" href="{{ .Permalink }}">
@@ -31,11 +32,8 @@
 <!-- Safari bookmarks / iOS home screen -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-
 <!-- Android home screen -->
 <link rel="manifest" href="/site.webmanifest">
-
-
 
 <!-- Logos Reftagger -->
 <script>
