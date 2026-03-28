@@ -9,8 +9,10 @@ type: prose
 
 God has declared that all members of his body are to congregate together in local assemblies for regular worship on the Lord's Day. Every Sunday, Reformation Parish gathers to worship the Triune God through Word and Sacrament.
 
-**We meet at Eastside Elementary School every Sunday at {{< service-time >}}.**\
+**We meet at Eastside Elementary School every Sunday at {{< service-time >}} beginning April 12.**\
 [{{< service-location >}}](https://maps.app.goo.gl/kPmHDRVj8uD3vkZe9)
+
+Check [the church center calendar](https://reformationparish.churchcenter.com/calendar?view=list) for up-to-date information.
 
 ## What to Expect
 
