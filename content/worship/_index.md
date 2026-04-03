@@ -44,7 +44,7 @@ The minister pronounces God's blessing on the congregation as they are sent into
 
 ## The Sacraments
 
-**Baptism.** Baptism with water in the name of the Father, the Son, and the Holy Spirit is a sign and seal of the covenant of grace — a sign of one's engrafting into Christ to walk in newness of life. We baptize the infant children of believing parents as members of the covenant community.
+**Baptism.** Baptism with water in the name of the Father, the Son, and the Holy Spirit is a sign and seal of the covenant of grace — a sign of one's engrafting into Christ to walk in newness of life. We baptize both professing believers and the children of believing parents into membership in the covenant community.
 
 **The Lord's Supper.** The Lord's Supper is a covenant meal in which Christ feeds his people and renews the promises of the gospel. We practice weekly communion and welcome all baptized covenant members, including baptized children who are able to eat and drink.
 
