@@ -988,6 +988,24 @@ blockquote {
   color: rgba(250, 248, 243, 0.5);
 }
 
+.footer-dl {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+}
+
+.footer-dl__group dd {
+  margin: 0;
+}
+
+.footer-dl__group dd p {
+  margin-bottom: 0;
+}
+
+.footer-dl__group a {
+  color: inherit;
+}
+
 .footer-col__heading {
   font-family: var(--font-sans);
   font-size: 0.62rem;
@@ -995,7 +1013,7 @@ blockquote {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: var(--sp-5);
+  margin-bottom: var(--sp-2);
   display: block;
 }
 

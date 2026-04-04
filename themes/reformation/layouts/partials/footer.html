@@ -40,31 +40,29 @@
       <div class="footer-col">
         <div class="footer-links">
           <address class="footer-address">
-            <dl>
+            <dl class="footer-dl">
               {{ with .Site.Params.mailingAddress }}
-              <dt class="footer-col__heading">Mailing Address</dt>
-              <dd>
-                {{ . | markdownify }}
-              </dd>
+              <div class="footer-dl__group">
+                <dt class="footer-col__heading">Mailing Address</dt>
+                <dd>{{ . | markdownify }}</dd>
+              </div>
               {{ end }}
-
 
               {{ with .Site.Params.email }}
-              <dt class="footer-col__heading">Email</dt>
-              <dd>
-                <br><a href="mailto:{{ . }}" style="color:inherit;">{{ . }}</a>
-              </dd>
+              <div class="footer-dl__group">
+                <dt class="footer-col__heading">Email</dt>
+                <dd><a href="mailto:{{ . }}">{{ . }}</a></dd>
+              </div>
               {{ end }}
-              
+
               {{ with .Site.Params.phone }}
-              <dt class="footer-col__heading">Phone</dt>
-              <dd>
-                <br><a href="tel:{{ . }}" style="color:inherit;">{{ . }}</a>
-              </dd>
+              <div class="footer-dl__group">
+                <dt class="footer-col__heading">Phone</dt>
+                <dd><a href="tel:{{ . }}">{{ . }}</a></dd>
+              </div>
               {{ end }}
             </dl>
           </address>
-        </ul>
       </div>
 
     </div><!-- /.footer-inner -->
