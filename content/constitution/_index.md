@@ -1,5 +1,5 @@
 ---
-title: "Reformation Parish Constitution"
+title: "Constitution"
 subtitle: "Adopted March 3rd, 2026"
 type: prose
 ---
