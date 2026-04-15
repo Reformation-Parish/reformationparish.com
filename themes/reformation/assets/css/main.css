@@ -21,11 +21,11 @@
   --text-muted:        #6B5D50;
   --text-faint:        #9B8E82;
   --divider:           #DDD5C4;
-  --white:             #FFFFFF;
+  --white:             #FFF;
 
   /* Typography */
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body:    'Crimson Pro', Georgia, serif;
+  --font-display: 'Cormorant Garamond', georgia, serif;
+  --font-body:    'Crimson Pro', georgia, serif;
   --font-sans:    'Inter', system-ui, sans-serif;
 
   /* Type scale */
@@ -63,9 +63,9 @@
   --ease-slow:   0.6s ease;
 
   /* Shadows */
-  --shadow-sm: 0 1px 4px rgba(28, 20, 16, 0.07);
-  --shadow-md: 0 6px 24px rgba(28, 20, 16, 0.11);
-  --shadow-lg: 0 16px 48px rgba(28, 20, 16, 0.16);
+  --shadow-sm: 0 1px 4px rgb(28 20 16 / 7%);
+  --shadow-md: 0 6px 24px rgb(28 20 16 / 11%);
+  --shadow-lg: 0 16px 48px rgb(28 20 16 / 16%);
 }
 
 
@@ -79,7 +79,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -121,7 +121,11 @@ h2 { font-size: var(--text-3xl); }
 h3 { font-size: var(--text-2xl); }
 h4 { font-size: var(--text-xl); }
 h5 { font-size: var(--text-lg); }
-h6 { font-size: var(--text-base); font-weight: 500; }
+
+h6 {
+  font-size: var(--text-base);
+  font-weight: 500;
+}
 
 p { margin-bottom: var(--sp-4); }
 p:last-child { margin-bottom: 0; }
@@ -271,7 +275,7 @@ blockquote {
   height: 0.85em;
   margin-left: 0.25em;
   vertical-align: middle;
-  stroke: currentColor;
+  stroke: currentcolor;
   stroke-width: 2;
   fill: none;
   stroke-linecap: round;
@@ -287,7 +291,7 @@ blockquote {
 }
 
 .site-header--over-dark .site-logo__sub {
-  color: rgba(250, 248, 243, 0.55);
+  color: rgb(250 248 243 / 55%);
 }
 
 .site-header--over-dark .site-logo__img {
@@ -325,10 +329,12 @@ blockquote {
 .nav-toggle.is-active .nav-toggle__bar:nth-child(1) {
   transform: translateY(6.5px) rotate(45deg);
 }
+
 .nav-toggle.is-active .nav-toggle__bar:nth-child(2) {
   opacity: 0;
   transform: scaleX(0);
 }
+
 .nav-toggle.is-active .nav-toggle__bar:nth-child(3) {
   transform: translateY(-6.5px) rotate(-45deg);
 }
@@ -348,8 +354,8 @@ blockquote {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 20% 80%, rgba(201, 168, 76, 0.07) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(107, 31, 58, 0.5) 0%, transparent 70%),
+    radial-gradient(ellipse 80% 60% at 20% 80%, rgb(201 168 76 / 7%) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgb(107 31 58 / 50%) 0%, transparent 70%),
     linear-gradient(160deg, #3A0D1E 0%, #1C0A10 45%, #2D1220 100%);
 }
 
@@ -359,8 +365,8 @@ blockquote {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(201, 168, 76, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 168, 76, 0.04) 1px, transparent 1px);
+    linear-gradient(rgb(201 168 76 / 4%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(201 168 76 / 4%) 1px, transparent 1px);
   background-size: 80px 80px;
 }
 
@@ -436,7 +442,7 @@ blockquote {
   font-size: clamp(1.1rem, 2.2vw, 1.45rem);
   font-weight: 300;
   font-style: italic;
-  color: rgba(250, 248, 243, 0.72);
+  color: rgb(250 248 243 / 72%);
   line-height: 1.65;
   margin-bottom: var(--sp-8);
   max-width: 500px;
@@ -459,7 +465,7 @@ blockquote {
   flex-direction: column;
   align-items: center;
   gap: var(--sp-3);
-  color: rgba(201, 168, 76, 0.5);
+  color: rgb(201 168 76 / 50%);
   font-family: var(--font-sans);
   font-size: 0.6rem;
   letter-spacing: 0.3em;
@@ -469,14 +475,25 @@ blockquote {
 .hero__scroll-line {
   width: 1px;
   height: 44px;
-  background: linear-gradient(to bottom, rgba(201, 168, 76, 0.7), transparent);
-  animation: scrollDrop 2.2s ease-in-out infinite;
+  background: linear-gradient(to bottom, rgb(201 168 76 / 70%), transparent);
+  animation: scroll-drop 2.2s ease-in-out infinite;
 }
 
-@keyframes scrollDrop {
-  0%   { opacity: 0; transform: scaleY(0.5); }
-  40%  { opacity: 1; transform: scaleY(1); }
-  100% { opacity: 0; transform: scaleY(1) translateY(8px); }
+@keyframes scroll-drop {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.5);
+  }
+
+  40% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(1) translateY(8px);
+  }
 }
 
 .btn {
@@ -501,23 +518,25 @@ blockquote {
   color: var(--burgundy-dark);
   border-color: var(--gold);
 }
+
 .btn--gold:hover {
   background: var(--gold-light);
   border-color: var(--gold-light);
   color: var(--burgundy-dark);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(201, 168, 76, 0.35);
+  box-shadow: 0 4px 16px rgb(201 168 76 / 35%);
 }
 
 .btn--ghost {
   background: transparent;
   color: var(--cream);
-  border-color: rgba(250, 248, 243, 0.35);
+  border-color: rgb(250 248 243 / 35%);
 }
+
 .btn--ghost:hover {
   border-color: var(--gold);
   color: var(--gold);
-  background: rgba(201, 168, 76, 0.06);
+  background: rgb(201 168 76 / 6%);
 }
 
 .btn--outline {
@@ -525,6 +544,7 @@ blockquote {
   color: var(--burgundy);
   border-color: var(--burgundy);
 }
+
 .btn--outline:hover {
   background: var(--burgundy);
   color: var(--white);
@@ -535,6 +555,7 @@ blockquote {
   color: var(--white);
   border-color: var(--burgundy);
 }
+
 .btn--burgundy:hover {
   background: var(--burgundy-mid);
   border-color: var(--burgundy-mid);
@@ -550,10 +571,12 @@ blockquote {
 .section--cream     { background: var(--cream); }
 .section--white     { background: var(--white); }
 .section--parchment { background: var(--cream-dark); }
+
 .section--dark {
   background: var(--burgundy-dark);
   color: var(--cream);
 }
+
 .section--dark-mid {
   background: linear-gradient(160deg, var(--burgundy-dark), var(--burgundy));
   color: var(--cream);
@@ -600,7 +623,7 @@ blockquote {
 
 .section--dark .section-lead,
 .section--dark-mid .section-lead {
-  color: rgba(250, 248, 243, 0.68);
+  color: rgb(250 248 243 / 68%);
 }
 
 /* Ornament divider */
@@ -633,7 +656,7 @@ blockquote {
 
 .section--dark .ornament__line,
 .section--dark-mid .ornament__line {
-  background: rgba(201, 168, 76, 0.25);
+  background: rgb(201 168 76 / 25%);
 }
 
 
@@ -692,12 +715,12 @@ blockquote {
 
 .welcome__ring:nth-child(2) {
   inset: 20px;
-  border-color: rgba(201, 168, 76, 0.3);
+  border-color: rgb(201 168 76 / 30%);
 }
 
 .welcome__ring:nth-child(3) {
   inset: 40px;
-  border-color: rgba(201, 168, 76, 0.15);
+  border-color: rgb(201 168 76 / 15%);
 }
 
 .welcome__medallion-logo {
@@ -765,15 +788,15 @@ blockquote {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  background: rgba(201, 168, 76, 0.15);
-  border: 1px solid rgba(201, 168, 76, 0.15);
+  background: rgb(201 168 76 / 15%);
+  border: 1px solid rgb(201 168 76 / 15%);
   margin-top: var(--sp-12);
 }
 
 .service-band__item {
   padding: var(--sp-8) var(--sp-6);
   text-align: center;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgb(255 255 255 / 3%);
 }
 
 .service-band__label {
@@ -798,7 +821,7 @@ blockquote {
   font-family: var(--font-body);
   font-size: var(--text-sm);
   font-style: italic;
-  color: rgba(250, 248, 243, 0.45);
+  color: rgb(250 248 243 / 45%);
   margin-top: var(--sp-1);
   display: block;
 }
@@ -908,8 +931,8 @@ blockquote {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(201, 168, 76, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 168, 76, 0.05) 1px, transparent 1px);
+    linear-gradient(rgb(201 168 76 / 5%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(201 168 76 / 5%) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
@@ -930,7 +953,7 @@ blockquote {
   font-family: var(--font-body);
   font-size: var(--text-lg);
   font-style: italic;
-  color: rgba(250, 248, 243, 0.68);
+  color: rgb(250 248 243 / 68%);
   max-width: 520px;
   margin-inline: auto;
   margin-bottom: var(--sp-10);
@@ -945,7 +968,7 @@ blockquote {
 
 .site-footer {
   background: var(--text);
-  color: rgba(250, 248, 243, 0.6);
+  color: rgb(250 248 243 / 60%);
   padding: var(--sp-16) 0 0;
 }
 
@@ -976,7 +999,7 @@ blockquote {
   font-family: var(--font-body);
   font-size: var(--text-base);
   font-style: italic;
-  color: rgba(250, 248, 243, 0.42);
+  color: rgb(250 248 243 / 42%);
   line-height: 1.6;
   margin-bottom: var(--sp-6);
 }
@@ -985,7 +1008,7 @@ blockquote {
   font-style: normal;
   font-size: var(--text-base);
   line-height: 1.9;
-  color: rgba(250, 248, 243, 0.5);
+  color: rgb(250 248 243 / 50%);
 }
 
 .footer-dl {
@@ -1026,7 +1049,7 @@ blockquote {
 .footer-links a {
   font-family: var(--font-body);
   font-size: var(--text-base);
-  color: rgba(250, 248, 243, 0.52);
+  color: rgb(250 248 243 / 52%);
   transition: color var(--ease-fast);
 }
 
@@ -1044,23 +1067,23 @@ blockquote {
 .footer-social a {
   display: flex;
   align-items: center;
-  color: rgba(250, 248, 243, 0.3);
+  color: rgb(250 248 243 / 30%);
   transition: color 0.2s;
 }
 
 .footer-social a:hover {
-  color: rgba(250, 248, 243, 0.7);
+  color: rgb(250 248 243 / 70%);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(250, 248, 243, 0.08);
+  border-top: 1px solid rgb(250 248 243 / 8%);
   padding: var(--sp-6) 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: var(--font-sans);
   font-size: 0.65rem;
-  color: rgba(250, 248, 243, 0.28);
+  color: rgb(250 248 243 / 28%);
   letter-spacing: 0.06em;
 }
 
@@ -1078,8 +1101,8 @@ blockquote {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(201, 168, 76, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 168, 76, 0.04) 1px, transparent 1px);
+    linear-gradient(rgb(201 168 76 / 4%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(201 168 76 / 4%) 1px, transparent 1px);
   background-size: 80px 80px;
   pointer-events: none;
 }
@@ -1111,7 +1134,7 @@ blockquote {
   font-size: var(--text-lg);
   font-style: italic;
   font-weight: 300;
-  color: rgba(250, 248, 243, 0.6);
+  color: rgb(250 248 243 / 60%);
   margin-top: var(--sp-4);
   position: relative;
   z-index: 1;
@@ -1123,9 +1146,22 @@ blockquote {
   margin-inline: auto;
 }
 
-.prose h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: var(--sp-6); }
-.prose h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-top: var(--sp-12); margin-bottom: var(--sp-4); }
-.prose h3 { font-size: clamp(1.3rem, 2.5vw, 1.7rem); margin-top: var(--sp-8); margin-bottom: var(--sp-3); }
+.prose h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--sp-6);
+}
+
+.prose h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-top: var(--sp-12);
+  margin-bottom: var(--sp-4);
+}
+
+.prose h3 {
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  margin-top: var(--sp-8);
+  margin-bottom: var(--sp-3);
+}
 
 .prose p {
   font-size: var(--text-lg);
@@ -1137,7 +1173,7 @@ blockquote {
 .prose a {
   color: var(--burgundy);
   text-decoration: underline;
-  text-decoration-color: rgba(201, 168, 76, 0.5);
+  text-decoration-color: rgb(201 168 76 / 50%);
   text-underline-offset: 3px;
 }
 
@@ -1231,31 +1267,37 @@ blockquote {
 .post-card__more:hover { color: var(--gold-dark); }
 
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .welcome {
     grid-template-columns: 1fr;
   }
+
   .welcome__medallion {
     display: none;
   }
+
   .pillars {
     grid-template-columns: 1fr 1fr;
   }
+
   .sermons-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .footer-inner {
     grid-template-columns: 1fr 1fr;
   }
+
   .footer-brand {
     grid-column: 1 / -1;
   }
+
   .service-band {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   :root {
     --nav-height: 64px;
   }
@@ -1365,6 +1407,7 @@ blockquote {
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
 [data-animate].is-visible {
   opacity: 1;
   transform: none;
