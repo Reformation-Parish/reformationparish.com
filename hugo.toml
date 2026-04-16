@@ -26,14 +26,9 @@ theme = 'reformation'
   weight = 20
 
 [[menus.main]]
-  name = 'Sermons'
-  url = '/sermons/'
-  weight = 30
-
-[[menus.main]]
   name = 'Church Center'
   url = 'https://reformationparish.churchcenter.com'
-  weight = 40
+  weight = 80
 
 [[menus.footer]]
   name = 'About'
@@ -46,11 +41,6 @@ theme = 'reformation'
   weight = 20
 
 [[menus.footer]]
-  name = 'Sermons'
-  url = '/sermons/'
-  weight = 30
-
-[[menus.footer]]
   name = 'Church Center'
   url = 'https://reformationparish.churchcenter.com'
-  weight = 40
+  weight = 80
