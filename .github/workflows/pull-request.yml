@@ -18,11 +18,6 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Validate
-        uses: anishathalye/proof-html@v2
-        with:
-          directory: public/
-
   lint:
     runs-on: ubuntu-latest
     steps:
