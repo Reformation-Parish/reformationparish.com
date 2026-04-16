@@ -1166,7 +1166,7 @@ blockquote {
   color: var(--text-muted);
 }
 
-.prose a {
+.prose a:not(.heading-anchor__link) {
   color: var(--burgundy);
   text-decoration: underline;
   text-decoration-color: rgb(201 168 76 / 50%);
@@ -1175,6 +1175,46 @@ blockquote {
 
 .prose blockquote {
   margin: var(--sp-8) 0;
+}
+
+/* Heading anchor links */
+.heading-anchor {
+  position: relative;
+  scroll-margin-top: calc(var(--nav-height) + var(--sp-4));
+}
+
+.heading-anchor__link {
+  position: absolute;
+  left: -0.75em;
+  color: var(--text-faint);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity var(--ease-fast), color var(--ease-fast);
+}
+
+.heading-anchor:hover .heading-anchor__link {
+  opacity: 1;
+}
+
+.heading-anchor__link:hover {
+  color: var(--burgundy);
+}
+
+.heading-anchor__link.is-copied {
+  color: var(--gold-dark);
+}
+
+.heading-anchor__icon {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+}
+
+/* On touch devices, always show the anchor link */
+@media (hover: none) {
+  .heading-anchor__link {
+    opacity: 0.5;
+  }
 }
 
 .prose ul, .prose ol {
