@@ -12,34 +12,31 @@ God has declared that all members of his body are to congregate together in loca
 **We meet at Eastside Elementary School every Sunday at {{< service-time >}}.**\
 [{{< service-location >}}](https://maps.app.goo.gl/kPmHDRVj8uD3vkZe9)
 
-Check [the church center calendar](https://reformationparish.churchcenter.com/calendar?view=list) for up-to-date information.
+Check [the church center calendar](https://reformationparish.churchcenter.com/calendar?view=list) for up-to-date information. Visitors are warmly welcome.
 
 ## What to Expect
 
-You do not need to be a member to attend. Visitors are warmly welcome. Here is what a typical Lord's Day looks like:
+### Call
+_The Lord Calls Us Into His Presence_\
+The Lord calls the congregation to worship from His Word.
 
-**Prelude & Preparation**
-Music is played as the congregation gathers and prepares their hearts for worship.
-
-**Call to Worship**
-The minister calls the congregation to worship on God's authority, from God's Word.
-
-**Psalm or Hymn of Praise**
-We sing together to the God who has called us.
-
-**Confession of Sin & Absolution**
+### Confession
+_The Lord Cleanses And Restores Us_\
 We acknowledge our sin before God and receive the declaration of his pardon in Christ.
 
-**The Ministry of the Word**
-We read from multiple portions of Scripture, followed by expository preaching.
+### Consecration
+_The Lord Accepts Us Into His Presence and Teaches Us_
+- We read from multiple portions of Scripture, followed by expository preaching.
+- We confess our faith together.
+- We pray for the Church and the world.
+- We offer tithes before God.
 
-**The Lord's Supper**
-We celebrate the Lord's Supper every Lord's Day. The Supper is a memorial of Christ and his death through sacred use of bread and wine, to be observed by the Church until the end of the world. All baptized covenant members — including baptized children who are able to physically eat and drink — are welcome at the Table.
+### Communion
+_The Lord Communes With Us_\
+We joyfully dine with the Lord at His table as He welcomes us into Sabbath rest.
 
-**Offering & Prayers of Intercession**
-We bring our tithes before God and pray for the Church and the world.
-
-**Benediction**
+### Commission
+_The Lord Blesses Us and Sends Us_\
 The minister pronounces God's blessing on the congregation as they are sent into the week.
 
 ## The Sacraments
