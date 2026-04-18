@@ -16,17 +16,19 @@ Check [the church center calendar](https://reformationparish.churchcenter.com/ca
 
 ## What to Expect
 
+Much like we refresh our bodies with food, our service is organized to renew covenant with the Lord after the patterns of worship established in Scripture. He draws us in, cleans us up, helps us see, brings us into rest with feasting, and commissions us into His purposes for us in the world. All worship is an ascent—Heaven meeting Earth—and thus, we "lift our hearts to the Lord" as we climb the hill to dine with Him.
+
 ### Call
 _The Lord Calls Us Into His Presence_\
 The Lord calls the congregation to worship from His Word.
 
 ### Confession
 _The Lord Cleanses And Restores Us_\
-We acknowledge our sin before God and receive the declaration of his pardon in Christ.
+The Lord cleans us up so that we are fit to enter into His presence as we confess our sins before him.
 
 ### Consecration
 _The Lord Accepts Us Into His Presence and Teaches Us_
-- We read from multiple portions of Scripture, followed by expository preaching.
+- We read multiple portions of Scripture, followed by expository preaching.
 - We confess our faith together.
 - We pray for the Church and the world.
 - We offer tithes before God.
