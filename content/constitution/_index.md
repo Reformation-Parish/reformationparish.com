@@ -30,7 +30,7 @@ Reformation Parish has constituted herself, under the authority and headship of 
 
 ### A) Confessions
 
-Reformation Parish will strive to believe, preach, and teach doctrine that accord with the Holy Word of God. The Bible is our final authority. Insofar as historical creeds and confessions of faith reflect true biblical teaching, we embrace the following: the Apostle's Creed, the Nicene Creed, Definition of Chalcedonian, and the Westminster Confession of Faith of 1646. Though we expect agreement on the Creeds of the Church, the WCF (1646) is a specific Reformational document. Those who take exception to our Confession must state their exceptions prior to joining Reformation Parish as members.
+Reformation Parish will strive to believe, preach, and teach doctrine that accord with the Holy Word of God. The Bible is our final authority. Insofar as historical creeds and confessions of faith reflect true biblical teaching, we embrace the following: the Apostle's Creed, the Nicene Creed, the Definition of Chalcedon, and the Westminster Confession of Faith of 1646. Though we expect agreement on the Creeds of the Church, the WCF (1646) is a specific Reformational document. Those who take exception to our Confession must state their exceptions prior to joining Reformation Parish as members.
 
 We take the following exception to the Westminster Confession of Faith:
 
