@@ -165,9 +165,9 @@
       </div>
       <div class="service-band__item">
         <span class="service-band__label">Location</span>
-        <span class="service-band__value">{{ with .Site.Params.location }}{{ . }}{{ else }}Your City, ST{{ end }}</span>
+        <span class="service-band__value">{{ with .Site.Params.meetingAddress }}{{ . | plainify | truncate 30 }}{{ end }}</span>
         <span class="service-band__sub">
-          {{ with .Site.Params.address }}{{ . | plainify | truncate 40 }}{{ end }}
+          {{ with .Site.Params.location }}{{ . }}{{ else }}Your City, ST{{ end }}
         </span>
       </div>
     </div>
