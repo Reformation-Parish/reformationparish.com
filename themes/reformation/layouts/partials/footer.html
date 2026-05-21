@@ -36,18 +36,29 @@
         </ul>
       </div>
 
+      <div class="footer-col">
+        <span class="footer-col__heading">Lord's Day</span>
+        <dl class="footer-dl">
+          <div class="footer-dl__group">
+            <dt class="footer-col__heading">Location</dt>
+            <dd>{{ .Site.Params.meetingAddress | markdownify }}<br />{{ .Site.Params.location | markdownify }}</dd>
+          </div>
+
+
+          <div class="footer-dl__group">
+            <dt class="footer-col__heading">Time</dt>
+            <dd>{{ .Site.Params.serviceDay | markdownify }}<br />{{ .Site.Params.serviceTime | markdownify }}</dd>
+          </div>
+
+        </dl>
+      </div>
+
       <!-- Contact info -->
       <div class="footer-col">
+        <span class="footer-col__heading">Contact</span>
         <div class="footer-links">
           <address class="footer-address">
             <dl class="footer-dl">
-              {{ with .Site.Params.mailingAddress }}
-              <div class="footer-dl__group">
-                <dt class="footer-col__heading">Mailing Address</dt>
-                <dd>{{ . | markdownify }}</dd>
-              </div>
-              {{ end }}
-
               {{ with .Site.Params.email }}
               <div class="footer-dl__group">
                 <dt class="footer-col__heading">Email</dt>
@@ -59,6 +70,13 @@
               <div class="footer-dl__group">
                 <dt class="footer-col__heading">Phone</dt>
                 <dd><a href="tel:{{ . }}">{{ . }}</a></dd>
+              </div>
+              {{ end }}
+
+              {{ with .Site.Params.mailingAddress }}
+              <div class="footer-dl__group">
+                <dt class="footer-col__heading">Mailing Address</dt>
+                <dd>{{ . | markdownify }}</dd>
               </div>
               {{ end }}
             </dl>
