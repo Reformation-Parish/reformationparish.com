@@ -14,7 +14,7 @@ Check [the church center calendar](https://reformationparish.churchcenter.com/ca
 
 ## What to Expect
 
-Much like we refresh our bodies with food, our service is organized to renew covenant with the Lord after the patterns of worship established in Scripture. He draws us in, cleans us up, helps us see, brings us into rest with feasting, and commissions us into His purposes for us in the world. All worship is an ascent—Heaven meeting Earth—and thus, we "lift our hearts to the Lord" as we climb the hill to dine with Him.
+Much like we refresh our bodies with food, our service is organized to renew covenant with the Lord after the patterns of worship established in Scripture. He draws us in, cleans us up, renews our minds, brings us into rest with feasting, and commissions us into His purposes for us in the world. All worship is an ascent—Heaven meeting Earth—and thus, we "lift our hearts to the Lord" as we climb the hill to dine with Him.
 
 ### Call
 _The Lord Calls Us Into His Presence_\
