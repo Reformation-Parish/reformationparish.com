@@ -103,6 +103,40 @@
 </section>
 
 
+<section class="section section--dark" style="padding: var(--sp-20) 0;">
+  <div class="container">
+
+    <div class="text-center" data-animate>
+      <span class="section-label">Join Us</span>
+      <h2 class="section-title">Lord's Day Worship</h2>
+      <p class="section-lead" style="margin-inline: auto; text-align: center;">
+        We welcome all who seek to worship the Triune God. Come as you are — the Table is set and the feast awaits.
+      </p>
+    </div>
+
+    <div class="service-band" data-animate>
+      <div class="service-band__item">
+        <span class="service-band__label">Day</span>
+        <span class="service-band__value">{{ with .Site.Params.serviceDay }}{{ . }}{{ else }}Sunday{{ end }}</span>
+        <span class="service-band__sub">Every week of the year</span>
+      </div>
+      <div class="service-band__item">
+        <span class="service-band__label">Time</span>
+        <span class="service-band__value">{{ with .Site.Params.serviceTime }}{{ . }}{{ else }}10:00 AM{{ end }}</span>
+        <span class="service-band__sub">Worship service</span>
+      </div>
+      <div class="service-band__item">
+        <span class="service-band__label">Location</span>
+        <span class="service-band__value">{{ with .Site.Params.meetingAddress }}{{ . | plainify | truncate 30 }}{{ end }}</span>
+        <span class="service-band__sub">
+          {{ with .Site.Params.location }}{{ . }}{{ else }}Your City, ST{{ end }}
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <section class="section section--parchment">
   <div class="container">
 
@@ -134,41 +168,6 @@
         <p class="pillar__body">
           Our liturgy is an ordered ascent in prayer — confession, absolution, intercession, and thanksgiving — the covenant people coming before their God with one voice.
         </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="section section--dark" style="padding: var(--sp-20) 0;">
-  <div class="container">
-
-    <div class="text-center" data-animate>
-      <span class="section-label">Join Us</span>
-      <h2 class="section-title">Lord's Day Worship</h2>
-      <p class="section-lead" style="margin-inline: auto; text-align: center;">
-        We welcome all who seek to worship the Triune God. Come as you are — the Table is set and the feast awaits.
-      </p>
-    </div>
-
-    <div class="service-band" data-animate>
-      <div class="service-band__item">
-        <span class="service-band__label">Day</span>
-        <span class="service-band__value">{{ with .Site.Params.serviceDay }}{{ . }}{{ else }}Sunday{{ end }}</span>
-        <span class="service-band__sub">Every week of the year</span>
-      </div>
-      <div class="service-band__item">
-        <span class="service-band__label">Time</span>
-        <span class="service-band__value">{{ with .Site.Params.serviceTime }}{{ . }}{{ else }}10:00 AM{{ end }}</span>
-        <span class="service-band__sub">Worship service</span>
-      </div>
-      <div class="service-band__item">
-        <span class="service-band__label">Location</span>
-        <span class="service-band__value">{{ with .Site.Params.meetingAddress }}{{ . | plainify | truncate 30 }}{{ end }}</span>
-        <span class="service-band__sub">
-          {{ with .Site.Params.location }}{{ . }}{{ else }}Your City, ST{{ end }}
-        </span>
       </div>
     </div>
 
