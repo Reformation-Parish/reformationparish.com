@@ -2,6 +2,7 @@ baseURL = 'https://reformationparish.com/'
 locale = 'en-us'
 title = 'Reformation Parish'
 theme = 'reformation'
+enableRobotsTXT = true
 
 [params]
   description = 'A confessional, liturgical church in the Communion of Reformed Evangelical Churches'
