@@ -1110,6 +1110,46 @@ blockquote {
   z-index: 1;
 }
 
+/* 404 */
+.not-found {
+  min-height: 85vh;
+  min-height: 85svh;
+  padding: calc(var(--nav-height) + var(--sp-8)) 0 var(--sp-12);
+  display: grid;
+  place-items: center;
+}
+
+.not-found__content {
+  width: 100%;
+  max-width: 760px;
+}
+
+.not-found__title {
+  font-size: clamp(4rem, 10vw, 7rem);
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: 0.03em;
+  color: var(--burgundy);
+}
+
+.not-found__tomb {
+  width: min(100%, 420px);
+  margin: var(--sp-6) auto var(--sp-3);
+  overflow: visible;
+}
+
+.not-found__subtitle {
+  margin-bottom: var(--sp-2);
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-style: italic;
+  color: var(--text);
+}
+
+.not-found__button {
+  margin-top: var(--sp-6);
+}
+
 
 .prose {
   max-width: var(--max-width-text);
